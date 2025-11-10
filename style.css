@@ -1,0 +1,63 @@
+:root {
+  --green-color: #c5f82aff;
+  --dark-grey-color: #1f1f1fff;
+  --light-grey-color: #333333ff;
+  --black-grey-color: #141414ff;
+  --highlight-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20vh 0 0 0;
+  background-color: var(--black-grey-color);
+  font-family: "Inter";
+  font-size: 0.875rem;
+  /** 14px fra style guide konvertert til rem */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 5vh 0;
+  background-color: var(--dark-grey-color);
+  width: 40vw;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.profile-img {
+  width: 20vw;
+  height: 20vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name-headline {
+  color: var(--highlight-color);
+}
+
+.description-txt {
+  color: var(--green-color);
+}
+
+.filler-txt {
+  color: var(--highlight-color);
+}
+
+.link-btn {
+  background-color: var(--light-grey-color);
+}
+
+.activated-btn {
+  background-color: var(--green-color);
+  color: var(--black-grey-color);
+  transition: all 0.3s ease-in-out;
+}
